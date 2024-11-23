@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background1.jpg");
+  background-size: cover;
+  color: rgb(9, 5, 78); /* Default color before transition */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 1s ease, color 1s ease; /* Smooth transition */
+}
+
+body.blue-bg {
+  background-color: #205484; /* Blue background */
+  color: white; /* Text color changes to white */
+  background-image: none; /* Remove background image */
+}
+
+.weather-app {
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#heading {
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease; /* Smooth fade-out effect */
+}
+
+/* When heading is hidden */
+#heading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Search bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #2920d0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Current weather */
+.current-weather {
+  margin-bottom: 20px;
+}
+
+.current-weather h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.weather-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.weather-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+.weather-info h1 {
+  margin: 0 0 5px 0;
+  font-size: 2.5rem;
+}
+
+.weather-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* 5-day forecast */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  text-align: center;
+  width: 70px;
+}
+
+.forecast-day img {
+  width: 70px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+  <div class="weather-app">
+    <!-- Input for city -->
+    <div id="heading">Enter City</div>
+    <div class="search-bar" id="search-bar">
+      <input type="text" id="city-input" placeholder="Enter city name..." />
+      <button id="search-btn">Get Weather</button>
+    </div>
+
+    <!-- Weather display -->
+    <div id="weather-container" class="hidden">
+      <!-- Current weather -->
+      <div class="current-weather">
+        <h2 id="location">City Name, Country</h2>
+        <div class="weather-main">
+          <div class="weather-icon">
+            <img id="weather-icon" src="" alt="Weather icon">
+          </div>
+          <div class="weather-info">
+            <h1 id="temperature">--°C</h1>
+            <p id="description">Description</p>
+          </div>
+        </div>
+        <div class="weather-details">
+          <p>Wind: <span id="wind-speed">-- kmph</span></p>
+          <p>Precip: <span id="precipitation">-- mm</span></p>
+          <p>Pressure: <span id="pressure">-- mb</span></p>
+        </div>
+      </div>
+
+      <!-- 5-day forecast -->
+      <div class="forecast">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-grid" id="forecast-container"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
